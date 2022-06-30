@@ -68,7 +68,7 @@ const App = (props) => {
         <Main items={items} onAdd={addToOrder} onAddFollow={addToFollow} />
         {/* END MAIN */}
         {/* FOOTER */}
-        {/* <Footer /> */}
+        <Footer />
         {/* END FOOTER */}
       </section>
       {/* CONTENT */}
