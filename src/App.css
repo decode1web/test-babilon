@@ -24,8 +24,9 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 0 97px;
-  position: relative;
+  position: fixed;
   background: #FDFDFB;
+  z-index: 1000;
 }
 nav .toggle-navbar{
   display: none;
@@ -490,13 +491,20 @@ nav .icons-link li:nth-child(3) .heart-opt{
   }
 }
 @media screen and (max-width: 560px){
+  .manu-link{
+    /* width: 560px; */
+    padding: 0;
+  }
+  nav .icons-link{
+    margin: 0;
+  }
   .popular .see-more{
     top: 20%;
     right: 20px;
   }
   .popular .popular-items{
     position: relative;
-    left: 0;
+    left: 130px;
   }
   .popular-items .popular-item:nth-child(1) {
     grid-column-start: 1;
@@ -729,9 +737,21 @@ nav .icons-link li:nth-child(3) .heart-opt{
   .subscribe{
     margin-top: -200px;
   }
+  .subscribe-img1,
+  .subscribe-img2,
+  .subscribe-img3{
+    display: none;
+  }
+  .card-content{
+    padding: 0;
+  }
 }
 /* END SUBSCRIBE */
-
+@media screen and (max-width: 925px){ 
+.subscribe-content .subscribe-img {
+  grid-template-columns: 0;
+}
+} 
 .btn-card{
   border: none;
   background: none;
